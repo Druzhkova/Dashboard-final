@@ -708,9 +708,12 @@ template {
 /* Colors
 ===============================================*/
 .sidebar {
+  z-index: 1;
   width: 4.375em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#EA6D54), to(#FD5272));
   background-image: linear-gradient(to bottom, #EA6D54, #FD5272);
+  -webkit-box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
 }
 
 .sidebar .sidebar_logo {
@@ -782,7 +785,70 @@ template {
   border-left: 10px solid #EA6D54;
 }
 
+.header {
+  background: #ffffff;
+  height: 70px;
+}
+
+.more_option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 18px;
+  width: 33px;
+  margin: 25px 20px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
+  background-image: linear-gradient(to right, #EA6D54, #FD5272);
+}
+
+.more_option .circle {
+  height: 6px;
+  width: 6px;
+  margin: 0 1px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img_header {
+  color: 0;
+}
+
+.header_folder {
+  margin: 0 20px;
+}
+
+.header_settings {
+  margin: 0 20px;
+}
+
+.serch_input {
+  width: 300px;
+  font-size: 12px;
+  border: 1px solid #F1F1F1;
+  background: #F8F8F8;
+  border-radius: 10px;
+}
+
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1366px;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
