@@ -1,0 +1,6 @@
+@mixin title-text {
+  font-family: $font-main;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #777777;
+}

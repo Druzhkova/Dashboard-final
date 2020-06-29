@@ -1,0 +1,15 @@
+@import './global/base';
+@import './global/variables';
+@import './components/side_bar';
+@import './components/header';
+@import './components/statistics_bar';
+@import './components/aside';
+@import './components/footer';
+
+.wrapper {
+  max-width: $max-width-wrapper;
+  margin: 0 auto;
+  font-family: $font-main;
+  text-align: center;
+  background: lightgoldenrodyellow;
+}
