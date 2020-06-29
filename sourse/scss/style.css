@@ -709,7 +709,7 @@ template {
 ===============================================*/
 .sidebar {
   z-index: 1;
-  width: 4.375em;
+  width: 70px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#EA6D54), to(#FD5272));
   background-image: linear-gradient(to bottom, #EA6D54, #FD5272);
   -webkit-box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
@@ -780,7 +780,7 @@ template {
   content: '';
   position: absolute;
   bottom: 12px;
-  left: 70px;
+  left: 65px;
   border: 10px solid transparent;
   border-left: 10px solid #EA6D54;
 }
@@ -816,7 +816,7 @@ template {
   background: #ffffff;
 }
 
-.container {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,6 +845,18 @@ template {
   border-radius: 10px;
 }
 
+.stactics_tab {
+  width: 1300px;
+  height: 98px;
+  background: lightblue;
+}
+
+.side_bar-right {
+  width: 271px;
+  height: 835px;
+  background: lightseagreen;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,5 +866,17 @@ template {
   font-family: "Lato", sans-serif;
   text-align: center;
   background: lightgoldenrodyellow;
+}
+
+.main {
+  width: 1030px;
+  height: 835px;
+  background: lightpink;
+}
+
+.container_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
