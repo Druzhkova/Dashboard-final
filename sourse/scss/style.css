@@ -799,8 +799,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   background: #ffffff;
-  -webkit-box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+  border: 1px solid #F1F1F1;
 }
 
 .header .col_more-option {
@@ -871,15 +870,88 @@ template {
 .circle--gray {
   height: 5px;
   width: 5px;
-  margin: 2px 20px 0 0;
+  margin: 2px 20px 0;
   border-radius: 50%;
   background: #BFBFBF;
 }
 
-.stactics_tab {
+.stactics-tab {
   max-width: 1300px;
-  height: 98px;
-  background: lightblue;
+  text-align: left;
+  background: #ffffff;
+}
+
+.stactics-tab__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px 20px 60px;
+}
+
+.stactics-tab__statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stactics-tab__title {
+  font-size: 12px;
+  color: #777777;
+  padding-bottom: 5px;
+}
+
+.stactics-tab__number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FD4F74;
+  padding-bottom: 5px;
+}
+
+.stactics-tab__statistics {
+  font-size: 12px;
+  color: #BFBFBF;
+}
+
+.number-left {
+  padding-left: 8px;
+}
+
+.number-right {
+  padding-left: 16px;
+}
+
+.stactics-tab__statistics {
+  position: relative;
+}
+
+.number-left::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  border: 3px solid transparent;
+  border-bottom: 6px solid #A889E9;
+}
+
+.number-right::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 35px;
+  border: 3px solid transparent;
+  border-top: 6px solid #FD5670;
+}
+
+.add-stactics {
+  font-size: 12px;
+  font-weight: bold;
+  color: #FD4F74;
 }
 
 .side_bar-right {
