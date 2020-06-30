@@ -1,9 +1,11 @@
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: $white;
+  box-shadow: 0 0 0.625em rgba(0,0,0,0.5);
 
-  .more_option {
+  .col_more-option {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,19 +24,47 @@
     }   
   }
 
-  .header_folder {
-    margin: 0 20px;
+  .col {
+    margin: $header-margin_col;
   }
-  
-  .header_settings {
-    margin: 0 20px;
-  } 
 }
 
-.serch_input {
+.header_serch-input {
   width: 300px;
   font-size: 12px;
   border: 1px solid #F1F1F1;
 	background: #F8F8F8;
   border-radius: 10px;
+}
+
+.header_panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.personal-information{
+  text-align: left;
+  line-height: 20px;
+
+  .personal-information_name {
+    @include small_tex(13px,#FD4E75);
+    font-weight: bold;
+  }
+  
+  .personal-information_profession {
+    @include small_tex(10px,#BFBFBF);
+  }
+}
+
+.more-option-right {
+
+}
+
+.circle--gray {
+  height: 5px;
+  width: 5px;
+  margin: 2px 20px 0 0;
+  border-radius: 50%;
+  background: #BFBFBF;
 }

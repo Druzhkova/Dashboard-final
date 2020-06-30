@@ -707,6 +707,8 @@ template {
 ===============================================*/
 /* Colors
 ===============================================*/
+/* Other
+===============================================*/
 .sidebar {
   z-index: 1;
   width: 70px;
@@ -790,13 +792,18 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: #ffffff;
+  -webkit-box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
 }
 
-.header .more_option {
+.header .col_more-option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,7 +821,7 @@ template {
   background-image: linear-gradient(to right, #EA6D54, #FD5272);
 }
 
-.header .more_option .circle {
+.header .col_more-option .circle {
   height: 6px;
   width: 6px;
   margin: 0 1px;
@@ -822,20 +829,51 @@ template {
   background: #ffffff;
 }
 
-.header .header_folder {
+.header .col {
   margin: 0 20px;
 }
 
-.header .header_settings {
-  margin: 0 20px;
-}
-
-.serch_input {
+.header_serch-input {
   width: 300px;
   font-size: 12px;
   border: 1px solid #F1F1F1;
   background: #F8F8F8;
   border-radius: 10px;
+}
+
+.header_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal-information {
+  text-align: left;
+  line-height: 20px;
+}
+
+.personal-information .personal-information_name {
+  font-size: 13px;
+  color: #FD4E75;
+  font-weight: bold;
+}
+
+.personal-information .personal-information_profession {
+  font-size: 10px;
+  color: #BFBFBF;
+}
+
+.circle--gray {
+  height: 5px;
+  width: 5px;
+  margin: 2px 20px 0 0;
+  border-radius: 50%;
+  background: #BFBFBF;
 }
 
 .stactics_tab {
@@ -858,6 +896,7 @@ template {
   margin: 0 auto;
   font-family: "Lato", sans-serif;
   text-align: center;
+  text-transform: capitalize;
   background: lightgoldenrodyellow;
 }
 
