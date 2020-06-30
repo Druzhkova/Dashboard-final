@@ -15,12 +15,15 @@
   background: lightgoldenrodyellow;
 }
 
-.main {
-  width: 1030px;
-  height: 835px;
-  background: lightpink;
-} 
+
 
 .container_main {
   display: flex;
+
+  .main {
+    width: 1030px;
+    height: 835px;
+    background: lightpink;
+  } 
+
 }

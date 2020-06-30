@@ -1,5 +1,12 @@
 .stactics_tab {
-  width: 1300px;
+  max-width: 1300px;
   height: 98px;
   background: lightblue ;
+
+  .stactics_tab-container {
+    margin: 20px 60px 20px 40px;
+    background: forestgreen;
+  }  
 }
+
+

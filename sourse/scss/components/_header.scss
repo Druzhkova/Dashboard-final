@@ -1,43 +1,34 @@
 .header {
-  background: $white;
-  height: 70px;
-}
-
-.more_option {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 18px;
-  width: 33px;
-  margin: 25px 20px;
-  border-radius: 10px;
-  background-image: $linear-gradient-right;
+  background: $white;
 
-  .circle {
-    height: 6px;
-    width: 6px;
-    margin: 0 1px;
-    border-radius: 50%;
-    background: $white;
+  .more_option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 33px;
+    margin: 25px 20px;
+    border-radius: 10px;
+    background-image: $linear-gradient-right;
+  
+    .circle {
+      height: 6px;
+      width: 6px;
+      margin: 0 1px;
+      border-radius: 50%;
+      background: $white;
+    }   
+  }
+
+  .header_folder {
+    margin: 0 20px;
   }
   
-}
-
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.img_header {
-  color: red($color: #000000);
-}
-
-.header_folder {
-  margin: 0 20px;
-}
-
-.header_settings {
-  margin: 0 20px;
+  .header_settings {
+    margin: 0 20px;
+  } 
 }
 
 .serch_input {
