@@ -1,14 +1,10 @@
-@mixin title-text {
+@mixin title_tex{
   font-family: $font-main;
-  font-size: 14px;
+  font-weight: bold;
   text-transform: capitalize;
   color: #777777;
 }
 
-@mixin small-sections-header {
-
-
-}
 
 @mixin section_stactics_bar {
   .stactics_tab-title {
