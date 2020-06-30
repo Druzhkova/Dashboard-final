@@ -844,11 +844,6 @@ template {
   background: lightblue;
 }
 
-.stactics_tab .stactics_tab-container {
-  margin: 20px 60px 20px 40px;
-  background: forestgreen;
-}
-
 .side_bar-right {
   width: 271px;
   height: 835px;
