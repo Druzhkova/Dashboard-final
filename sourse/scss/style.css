@@ -1028,7 +1028,9 @@ template {
 .main__lower-axis .block_feedback {
   width: 467px;
   height: 508px;
-  background: orchid;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main__lower-axis .main__lower-right {
@@ -1217,7 +1219,7 @@ hr {
   color: #6359B0;
   border: 7px solid #EDEDED;
   border-radius: 50%;
-  padding: 30px 15px;
+  padding: 33px 15px;
 }
 
 .stactics-trigon {
@@ -1252,5 +1254,81 @@ hr {
   left: 102px;
   border: 3px solid transparent;
   border-top: 6px solid #FD5670;
+}
+
+.customers-feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 8px;
+  color: #979796;
+}
+
+.customers-feed__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customers-feed__photos .customers-feed__img {
+  height: 43px;
+  width: 43px;
+  margin-bottom: 13px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.customers-feed__text {
+  margin-left: 20px;
+}
+
+.container-feed-text {
+  padding: 20px;
+  font-size: 12px;
+  color: #BFBFBF;
+  text-transform: none;
+  text-align: justify;
+  line-height: 1.2;
+  background: #FCFCFC;
+  border: 1px solid #F1F1F1;
+}
+
+.feed-text-bold {
+  font-weight: bold;
+  color: #777777;
+}
+
+.sub-feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.sub-feed__line {
+  height: 187px;
+  width: 4px;
+  margin-right: 13px;
+  background: #F1F1F1;
+}
+
+.container-sub-feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
