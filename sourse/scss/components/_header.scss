@@ -48,12 +48,12 @@
   line-height: 20px;
 
   .personal-information_name {
-    @include small_tex(13px,#FD4E75);
+    @include text(13px,#FD4E75);
     font-weight: bold;
   }
   
   .personal-information_profession {
-    @include small_tex(10px,#BFBFBF);
+    @include text(10px,#BFBFBF);
   }
 }
 

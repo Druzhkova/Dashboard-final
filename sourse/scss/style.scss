@@ -21,9 +21,169 @@
   display: flex;
 
   .main {
-    width: 1030px;
-    height: 835px;
-    background: lightpink;
-  } 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #EBEBEB;
+    padding: 20px;
 
+  } 
+}
+
+
+.main__upper-axis {
+  display: flex;
+  justify-content: space-between;
+
+  .block-diagram {
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  
+  .block_revenue {
+    width: 264px;
+    height: 266px;
+    background: navy;
+  }
+}
+
+.main__lower-axis {
+  display: flex;
+
+  .block_feedback {
+    width: 467px;
+    height: 508px;
+    background: orchid;
+  }
+
+  .main__lower-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .block_task {
+      width: 501px;
+      height: 245px;
+      background: palevioletred;
+    }
+
+    .main__lower-bottom {
+      display: flex;
+      justify-content: space-between;
+
+      .block_progress {
+        width: 241px;
+        height: 245px;
+        background: red;
+      }
+
+      .block_shipments {
+        width: 241px;
+        height: 245px;
+        background: skyblue;
+      }
+
+    }
+
+  }
+
+}
+
+.block-diagram__container {
+  padding: 30px;
+  
+  .block-diagram__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .block-diagram__title {
+      @include text(14px,#767676);
+
+    }
+    .block-diagram__time {
+      display: flex;
+      justify-content: space-between;
+      width: 170px;
+
+    }
+  }
+}
+
+.block-diagram__period {
+  display: flex;
+  width: 130px;
+  align-items: center;
+  justify-content: space-between;
+  @include text(12px,#BFBFBF);
+
+  .period-month {
+    height: 24px;
+    width: 68px;
+    color: white;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-image: $linear-gradient-right;
+
+  }
+
+}
+
+.block-diagram__circle {
+  margin: 2px 0 0 0;
+}
+
+
+.block-diagram__main {
+  display: flex;
+  padding: 30px 0 25px;
+
+  .block-diagram__quantity {
+    padding-right: 30px;
+    @include text(12px,#BFBFBF);
+
+    .four-hundred {
+      padding-bottom: 30px;
+    }
+    .three-hundred {
+      padding-bottom: 30px;
+    }
+    .two-hundred {
+      padding-bottom: 30px;
+    }
+  }
+
+  .block-diagram__diagram{
+    position: relative;
+
+    .hr-four {
+      margin: 10px 0 40px;
+    }
+    .hr-three {
+      margin: 0 0 42px;
+    }
+    .hr-two {
+      margin: 0 0 40px;
+    }
+  }
+
+  .block-diagram__img {
+    position: absolute;
+    top: 80px;
+  }
+}
+
+.block-diagram__month {
+  display: flex;
+  justify-content: space-around;
+  @include text(12px,#BFBFBF);
+  padding-left: 55px;
+}
+
+hr {
+  width: 571px;
+  height: 1px;
+  margin: 0;
+  border: none;
+  background: #EFEEEE;
 }

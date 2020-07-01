@@ -5,7 +5,7 @@
   color: #777777;
 }
 
-@mixin small_tex($a,$b) {
+@mixin text($a,$b) {
   font-size: $a;
   color: $b;
 }

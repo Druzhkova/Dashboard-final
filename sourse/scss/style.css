@@ -18,6 +18,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -879,6 +881,7 @@ template {
   max-width: 1300px;
   text-align: left;
   background: #ffffff;
+  border: 1px solid #F1F1F1;
 }
 
 .stactics-tab__inner {
@@ -979,8 +982,215 @@ template {
 }
 
 .container_main .main {
-  width: 1030px;
-  height: 835px;
-  background: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #EBEBEB;
+  padding: 20px;
+}
+
+.main__upper-axis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__upper-axis .block-diagram {
+  background: white;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.main__upper-axis .block_revenue {
+  width: 264px;
+  height: 266px;
+  background: navy;
+}
+
+.main__lower-axis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__lower-axis .block_feedback {
+  width: 467px;
+  height: 508px;
+  background: orchid;
+}
+
+.main__lower-axis .main__lower-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__lower-axis .main__lower-right .block_task {
+  width: 501px;
+  height: 245px;
+  background: palevioletred;
+}
+
+.main__lower-axis .main__lower-right .main__lower-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__lower-axis .main__lower-right .main__lower-bottom .block_progress {
+  width: 241px;
+  height: 245px;
+  background: red;
+}
+
+.main__lower-axis .main__lower-right .main__lower-bottom .block_shipments {
+  width: 241px;
+  height: 245px;
+  background: skyblue;
+}
+
+.block-diagram__container {
+  padding: 30px;
+}
+
+.block-diagram__container .block-diagram__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-diagram__container .block-diagram__header .block-diagram__title {
+  font-size: 14px;
+  color: #767676;
+}
+
+.block-diagram__container .block-diagram__header .block-diagram__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 170px;
+}
+
+.block-diagram__period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 130px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  color: #BFBFBF;
+}
+
+.block-diagram__period .period-month {
+  height: 24px;
+  width: 68px;
+  color: white;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
+  background-image: linear-gradient(to right, #EA6D54, #FD5272);
+}
+
+.block-diagram__circle {
+  margin: 2px 0 0 0;
+}
+
+.block-diagram__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0 25px;
+}
+
+.block-diagram__main .block-diagram__quantity {
+  padding-right: 30px;
+  font-size: 12px;
+  color: #BFBFBF;
+}
+
+.block-diagram__main .block-diagram__quantity .four-hundred {
+  padding-bottom: 30px;
+}
+
+.block-diagram__main .block-diagram__quantity .three-hundred {
+  padding-bottom: 30px;
+}
+
+.block-diagram__main .block-diagram__quantity .two-hundred {
+  padding-bottom: 30px;
+}
+
+.block-diagram__main .block-diagram__diagram {
+  position: relative;
+}
+
+.block-diagram__main .block-diagram__diagram .hr-four {
+  margin: 10px 0 40px;
+}
+
+.block-diagram__main .block-diagram__diagram .hr-three {
+  margin: 0 0 42px;
+}
+
+.block-diagram__main .block-diagram__diagram .hr-two {
+  margin: 0 0 40px;
+}
+
+.block-diagram__main .block-diagram__img {
+  position: absolute;
+  top: 80px;
+}
+
+.block-diagram__month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 12px;
+  color: #BFBFBF;
+  padding-left: 55px;
+}
+
+hr {
+  width: 571px;
+  height: 1px;
+  margin: 0;
+  border: none;
+  background: #EFEEEE;
 }
 /*# sourceMappingURL=style.css.map */

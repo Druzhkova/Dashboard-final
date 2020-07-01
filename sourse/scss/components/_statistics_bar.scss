@@ -1,7 +1,8 @@
 .stactics-tab {
   max-width: 1300px;
   text-align: left;
-  background: $white; 
+  background: $white;
+  border: 1px solid #F1F1F1;
 }
 
 .stactics-tab__inner {
@@ -16,7 +17,7 @@
 }
 
 .stactics-tab__title {
-  @include small_tex(12px,$gray-text);
+  @include text(12px,$gray-text);
   padding-bottom: 5px;
 }
 
