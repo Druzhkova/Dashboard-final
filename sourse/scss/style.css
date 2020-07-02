@@ -1107,6 +1107,34 @@ template {
   background: #F1F1F1;
 }
 
+.footer_container {
+  padding: 30px 40px;
+}
+
+.footer_container .footer_title {
+  font-size: 14px;
+  color: #777777;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.socials__icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,0 +1,21 @@
+.footer_container {
+  padding: 30px 40px;
+
+  .footer_title {
+    @include text(14px,#777777);
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+}
+
+.socials__icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
