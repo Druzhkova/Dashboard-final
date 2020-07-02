@@ -1000,12 +1000,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .main__upper-axis .block-diagram {
+  margin-right: 20px;
   height: 266px;
   background: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1024,11 +1023,15 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main__lower-axis .block_feedback {
   width: 467px;
   height: 508px;
+  margin-right: 20px;
   background: white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1067,7 +1070,9 @@ template {
 .main__lower-axis .main__lower-right .main__lower-bottom .block_progress {
   width: 241px;
   height: 245px;
-  background: red;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main__lower-axis .main__lower-right .main__lower-bottom .block_shipments {
@@ -1210,6 +1215,10 @@ hr {
   text-align: left;
 }
 
+.title-main_center {
+  text-align: center;
+}
+
 .ellipse {
   width: 124px;
   height: 124px;
@@ -1338,6 +1347,10 @@ hr {
           justify-content: space-between;
 }
 
+.block_task {
+  margin-bottom: 20px;
+}
+
 .title-main_task {
   padding: 0 0 20px;
 }
@@ -1400,5 +1413,56 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cylinders {
+  height: 88px;
+  width: 11px;
+  border-radius: 10px;
+  border: 1px solid #F1F1F1;
+  background: #F6F6F6;
+  margin: 0px 4px;
+}
+
+.number-progress {
+  font-size: 20px;
+  color: #747DDC;
+  font-weight: bold;
+}
+
+.content_cylinders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 23px;
+}
+
+.block-progress-number-one {
+  padding-right: 15px;
+}
+
+.stactics-trigon--progress {
+  padding-top: 10px;
+}
+
+.block-progress-number-one::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 55px;
+  border: 3px solid transparent;
+  border-bottom: 6px solid #A889E9;
+}
+
+.block-progress-number-two::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 90px;
+  border: 3px solid transparent;
+  border-top: 6px solid #FD5670;
 }
 /*# sourceMappingURL=style.css.map */

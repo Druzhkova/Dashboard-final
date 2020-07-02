@@ -33,9 +33,11 @@
 
 .main__upper-axis {
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 20px;
+
 
   .block-diagram {
+    margin-right: 20px;
     height: 266px;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -51,10 +53,12 @@
 
 .main__lower-axis {
   display: flex;
+  justify-content: space-between;
 
   .block_feedback {
     width: 467px;
     height: 508px;
+    margin-right: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
@@ -78,7 +82,8 @@
       .block_progress {
         width: 241px;
         height: 245px;
-        background: red;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
 
       .block_shipments {
@@ -200,6 +205,11 @@ hr {
   text-align: left;
 }
 
+.title-main_center {
+  text-align: center;
+}
+
+
 .ellipse {
   width: 124px;
   height: 124px;
@@ -311,6 +321,11 @@ border-top: 6px solid #FD5670;
 
 // Section task
 // ========================================================== //
+.block_task {
+  margin-bottom: 20px;
+}
+
+
 .title-main_task {
   padding: 0 0 20px;
 }
@@ -360,3 +375,54 @@ border-top: 6px solid #FD5670;
   display: flex;
   align-items: center;
 }
+
+// Section progress
+// ========================================================== //
+
+.cylinders {
+  height: 88px;
+  width: 11px;
+  border-radius: 10px;
+  border: 1px solid #F1F1F1;
+  background: #F6F6F6;
+  margin: 0px 4px;
+}
+
+.number-progress {
+  @include text(20px,#747DDC);
+  font-weight: bold;
+}
+
+.content_cylinders{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 23px;
+}
+
+.block-progress-number-one {
+  padding-right: 15px;
+}
+
+.stactics-trigon--progress {
+  padding-top: 10px;
+}
+
+.block-progress-number-one::after {
+  content: ''; 
+  position: absolute;
+  bottom: 2px;
+  left: 55px;
+  border: 3px solid transparent; 
+  border-bottom: 6px solid #A889E9; 
+}
+
+.block-progress-number-two::after {
+content: ''; 
+position: absolute;
+bottom: 1px;
+left: 90px;
+border: 3px solid transparent; 
+border-top: 6px solid #FD5670;
+
+}
+
