@@ -39,6 +39,7 @@
   .block-diagram {
     margin-right: 20px;
     height: 266px;
+    width: 704px;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
@@ -89,7 +90,8 @@
       .block_shipments {
         width: 241px;
         height: 245px;
-        background: skyblue;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
 
     }
@@ -418,11 +420,56 @@ border-top: 6px solid #FD5670;
 
 .block-progress-number-two::after {
 content: ''; 
-position: absolute;
-bottom: 1px;
-left: 90px;
-border: 3px solid transparent; 
-border-top: 6px solid #FD5670;
+  position: absolute;
+  bottom: 1px;
+  left: 90px;
+  border: 3px solid transparent; 
+  border-top: 6px solid #FD5670;
 
 }
 
+
+// Section shipments
+// ========================================================== //
+.number-shipments {
+  display: flex;
+  justify-content: space-between;
+  @include text(20px,#FD5B6C);
+  font-weight: bold;
+}
+
+.block_shipments__map {
+  padding-bottom: 20px;
+}
+
+.stactics-trigon--shipments {
+  font-weight: normal;
+  padding-top: 10px;
+}
+
+.block-shipments-number-one::after {
+  content: ''; 
+  position: absolute;
+  bottom: 1.5px;
+  right: 58px;
+  border: 3px solid transparent; 
+  border-bottom: 6px solid #A889E9; 
+}
+
+.block-shipments-number-two::after {
+content: ''; 
+  position: absolute;
+  bottom: 0.5px;
+  right: 22px;
+  border: 3px solid transparent; 
+  border-top: 6px solid #FD5670;
+}
+
+.block-shipments-number-one {
+  padding-right: 15px;
+}
+
+.title-main_shipments {
+  text-align: center;
+  padding-bottom: 25px;
+}
