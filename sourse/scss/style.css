@@ -972,6 +972,10 @@ template {
   padding: 25px 20px 20px;
 }
 
+.side_bar___container--ben-affleck {
+  padding: 25px 20px 30px;
+}
+
 .side_bar__panel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,6 +1080,31 @@ template {
 .icon-chat-img {
   width: 20px;
   height: 16px;
+}
+
+.aside-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px 13px;
+}
+
+.aside-search__input {
+  font-size: 10px;
+  color: #C0C0C0;
+  width: 161px;
+  border-style: none;
+  border-bottom: 1px solid #E9E9E9;
+  background: #FCFCFC;
+}
+
+.line-search {
+  width: 271px;
+  height: 1px;
+  background: #F1F1F1;
 }
 
 .wrapper {
