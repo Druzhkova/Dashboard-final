@@ -1,5 +1,101 @@
 .side_bar-right {
   width: 271px;
   height: 835px;
-  background: lightseagreen;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.side_bar___container {
+  display: flex;
+  padding: 25px 20px 20px;
+}
+
+.side_bar__panel {
+  display: flex;
+  align-items: center;
+  background-image: $linear-gradient-right;
+
+  .side_bar__users {
+    padding: 14px 33px;
+  }
+
+  .side_bar__chat {
+    padding: 15px 36px;
+  }
+
+  .side_bar__like {
+    padding: 15px 33px 14px 36px;
+  }
+}
+.side-bar-hover {
+  position: relative;
+}
+
+.side-bar-hover:hover {
+  background: #C34256;
+}
+
+.side_bar__users:hover::after {
+  content: ''; 
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent; 
+  border-top: 10px solid #C34256; 
+ }
+
+ .side_bar__chat:hover::after {
+  content: ''; 
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent; 
+  border-top: 10px solid #C34256; 
+ }
+
+ .side_bar__like:hover::after {
+  content: ''; 
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent; 
+  border-top: 10px solid #C34256; 
+ }
+
+.side_bar___users-photo {
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  margin-right: 17px;
+}
+
+.side_bar__personal-information {
+  text-align: left;
+  line-height: 20px;
+}
+
+.personal-information-name {
+  @include text(13px,#777777);
+  font-weight: bold;
+}
+
+.personal-information-profession {
+  @include text(10px,#BFBFBF);
+}
+
+.side_bar___container-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.side_bar___line {
+  width: 233px;
+  height: 1px;
+  background: #F1F1F1;
+}
+.icon-chat-img {
+  width: 20px;
+  height: 16px;
 }

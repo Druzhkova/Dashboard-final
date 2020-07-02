@@ -15,6 +15,7 @@
   text-align: center;
   text-transform: capitalize;
   background: lightgoldenrodyellow;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .container_main {
@@ -334,7 +335,6 @@ border-top: 6px solid #FD5670;
 
 .block-task__line {
   width: 441px;
-  height: 2px;
 }
 
 .block-task__tick {

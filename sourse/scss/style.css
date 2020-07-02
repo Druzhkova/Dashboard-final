@@ -960,7 +960,122 @@ template {
 .side_bar-right {
   width: 271px;
   height: 835px;
-  background: lightseagreen;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.side_bar___container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 20px 20px;
+}
+
+.side_bar__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
+  background-image: linear-gradient(to right, #EA6D54, #FD5272);
+}
+
+.side_bar__panel .side_bar__users {
+  padding: 14px 33px;
+}
+
+.side_bar__panel .side_bar__chat {
+  padding: 15px 36px;
+}
+
+.side_bar__panel .side_bar__like {
+  padding: 15px 33px 14px 36px;
+}
+
+.side-bar-hover {
+  position: relative;
+}
+
+.side-bar-hover:hover {
+  background: #C34256;
+}
+
+.side_bar__users:hover::after {
+  content: '';
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent;
+  border-top: 10px solid #C34256;
+}
+
+.side_bar__chat:hover::after {
+  content: '';
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent;
+  border-top: 10px solid #C34256;
+}
+
+.side_bar__like:hover::after {
+  content: '';
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent;
+  border-top: 10px solid #C34256;
+}
+
+.side_bar___users-photo {
+  height: 42px;
+  width: 42px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 17px;
+}
+
+.side_bar__personal-information {
+  text-align: left;
+  line-height: 20px;
+}
+
+.personal-information-name {
+  font-size: 13px;
+  color: #777777;
+  font-weight: bold;
+}
+
+.personal-information-profession {
+  font-size: 10px;
+  color: #BFBFBF;
+}
+
+.side_bar___container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.side_bar___line {
+  width: 233px;
+  height: 1px;
+  background: #F1F1F1;
+}
+
+.icon-chat-img {
+  width: 20px;
+  height: 16px;
 }
 
 .wrapper {
@@ -973,6 +1088,8 @@ template {
   text-align: center;
   text-transform: capitalize;
   background: lightgoldenrodyellow;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .container_main {
@@ -1360,7 +1477,6 @@ hr {
 
 .block-task__line {
   width: 441px;
-  height: 2px;
 }
 
 .block-task__tick {
