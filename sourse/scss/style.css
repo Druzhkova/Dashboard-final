@@ -1517,6 +1517,40 @@ template {
           align-items: center;
 }
 
+.block-task__icon-time {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #A5A5A5;
+  border-radius: 50%;
+}
+
+.block-task__icon-time::after {
+  content: '';
+  position: absolute;
+  top: 1.2px;
+  right: 3px;
+  width: 1.2px;
+  height: 5px;
+  background: #A5A5A5;
+  border-radius: 10%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.block-task__icon-time::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 1.2px;
+  height: 4px;
+  background: #A5A5A5;
+  border-radius: 25%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .inner--lower-bottom {
   padding: 30px 30px 23px;
 }
