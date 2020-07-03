@@ -1095,6 +1095,7 @@ template {
   height: 1px;
   background: #F1F1F1;
   border: none;
+  margin: 0;
 }
 
 .aside-search {
@@ -1116,21 +1117,15 @@ template {
   background: #FCFCFC;
 }
 
-.footer_container {
-  padding: 30px 40px;
+.footer__container {
+  padding: 30px 40px 15px;
 }
 
-.footer_container .footer_title {
+.footer__container .footer__title {
+  padding-bottom: 30px;
   font-size: 14px;
   color: #777777;
   font-weight: bold;
-  padding-bottom: 30px;
-}
-
-.socials__icon {
-  width: 55px;
-  height: 55px;
-  margin-bottom: 15px;
 }
 
 .socials {
@@ -1142,6 +1137,12 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.socials .socials__icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
 }
 
 .wrapper {

@@ -1,21 +1,18 @@
-.footer_container {
-  padding: 30px 40px;
-
-  .footer_title {
-    @include text(14px,#777777);
-    font-weight: bold;
+.footer__container {
+  padding: 30px 40px 15px;
+  .footer__title {
     padding-bottom: 30px;
+    @include text($title-font-sizes,$title-color);
+    font-weight: $title-font-weight;
   }
-}
-
-.socials__icon {
-  width: 55px;
-  height: 55px;
-  margin-bottom: 15px;
 }
 
 .socials {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  .socials__icon {
+    @include size(55px,55px);
+    margin-bottom: 15px;
+  }
 }
