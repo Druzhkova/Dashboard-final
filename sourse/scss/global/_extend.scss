@@ -1,0 +1,14 @@
+// flex
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%circle-gray {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #BFBFBF;
+}

@@ -1,4 +1,5 @@
 @import './global/base';
+@import './global/extend';
 @import './global/variables';
 @import './global/mixins';
 @import './components/side_bar';
@@ -9,54 +10,29 @@
 
 .wrapper {
   display: flex;
-  max-width: $max-width-wrapper;
+  max-width: 1366px;
   margin: 0 auto;
   font-family: $font-main;
   text-align: center;
   text-transform: capitalize;
-  background: lightgoldenrodyellow;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.container_main {
+.container-main {
   display: flex;
-
-  .main {
+  .main-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #EBEBEB;
     padding: 20px;
-
+    background: #EBEBEB;
   } 
 }
 
 
-.main__upper-axis {
-  display: flex;
-  margin-bottom: 20px;
-
-
-  .block-diagram {
-    margin-right: 20px;
-    height: 266px;
-    width: 704px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-  
-  .block_revenue {
-    width: 264px;
-    height: 266px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-}
-
 .main__lower-axis {
   display: flex;
   justify-content: space-between;
-
   .block_feedback {
     width: 467px;
     height: 508px;
@@ -69,7 +45,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     .block_task {
       width: 501px;
       height: 245px;
@@ -80,7 +55,6 @@
     .main__lower-bottom {
       display: flex;
       justify-content: space-between;
-
       .block_progress {
         width: 241px;
         height: 245px;
@@ -94,89 +68,79 @@
         background: white;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
-
     }
-
   }
-
 }
 
-.block-main__container {
-  padding: 30px;
-  
-  .block-diagram__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// block-diagram 
+//===========================================
 
+.main-block__upper-axis {
+  display: flex;
+  margin-bottom: 20px;
+  .block-diagram {
+    margin-right: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+}
+
+.inner {
+  padding: 30px;
+  .block-diagram__header {
+    @extend %flex;
     .title {
-      @include text(14px,#767676);
-      font-weight: bold;
+      @include text($title-font-sizes,#767676);
+      font-weight: $font-weight;
     }
 
     .block-diagram__time {
       display: flex;
       justify-content: space-between;
       width: 170px;
-
     }
   }
 }
 
 .block-diagram__period {
-  display: flex;
+  @extend %flex;
   width: 130px;
-  align-items: center;
-  justify-content: space-between;
   @include text(12px,#BFBFBF);
-
-  .period-month {
+  .block-diagram__period-month {
     height: 24px;
     width: 68px;
-    color: white;
     padding-top: 5px;
     border-radius: 10px;
+    color: white;
     background-image: $linear-gradient-right;
-
   }
-
 }
 
-.block-diagram__circle {
+.block-diagram__circle-gray {
+  @extend %circle-gray;
   margin: 2px 0 0 0;
 }
-
 
 .block-diagram__main {
   display: flex;
   padding: 30px 0 25px;
-
   .block-diagram__quantity {
     padding-right: 30px;
-    @include text(12px,#BFBFBF);
-
-    .four-hundred {
+    @include text($middle-text,$gray-text-small);
+    .block-diagram__number {
       padding-bottom: 30px;
-    }
-    .three-hundred {
-      padding-bottom: 30px;
-    }
-    .two-hundred {
-      padding-bottom: 30px;
+      &:last-child {
+        padding-bottom: 0px;
+      }
     }
   }
 
-  .block-diagram__diagram{
+  .block-diagram__chart {
     position: relative;
-
-    .hr-four {
-      margin: 10px 0 40px;
-    }
-    .hr-three {
-      margin: 0 0 42px;
-    }
-    .hr-two {
-      margin: 0 0 40px;
+    .block-diagram__line {
+      margin-bottom: 38px;
+      &:last-child {
+        margin-bottom: 0px;
     }
   }
 
@@ -199,6 +163,13 @@ hr {
   margin: 0;
   border: none;
   background: #EFEEEE;
+}
+
+.block_revenue {
+  width: 264px;
+  height: 266px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .title-main {

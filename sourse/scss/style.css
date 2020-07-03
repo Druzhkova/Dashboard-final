@@ -278,7 +278,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   -webkit-box-sizing: content-box;
@@ -705,11 +705,32 @@ template {
   display: none;
 }
 
+.inner .block-diagram__header, .block-diagram__period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-circle-gray, .block-diagram__circle-gray {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #BFBFBF;
+}
+
 /* Font-sizes
 ===============================================*/
 /* Colors
 ===============================================*/
 /* Other
+===============================================*/
+/* block main 
 ===============================================*/
 .sidebar {
   z-index: 1;
@@ -869,12 +890,8 @@ template {
   color: #BFBFBF;
 }
 
-.circle--gray {
-  height: 5px;
-  width: 5px;
+.header-circle-gray {
   margin: 2px 20px 0;
-  border-radius: 50%;
-  background: #BFBFBF;
 }
 
 .stactics-tab {
@@ -1144,18 +1161,17 @@ template {
   font-family: "Lato", sans-serif;
   text-align: center;
   text-transform: capitalize;
-  background: lightgoldenrodyellow;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.container_main {
+.container-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container_main .main {
+.container-main .main-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1166,32 +1182,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #EBEBEB;
   padding: 20px;
-}
-
-.main__upper-axis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.main__upper-axis .block-diagram {
-  margin-right: 20px;
-  height: 266px;
-  width: 704px;
-  background: white;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.main__upper-axis .block_revenue {
-  width: 264px;
-  height: 266px;
-  background: white;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #EBEBEB;
 }
 
 .main__lower-axis {
@@ -1258,29 +1250,31 @@ template {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.block-main__container {
-  padding: 30px;
-}
-
-.block-main__container .block-diagram__header {
+.main-block__upper-axis {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 20px;
 }
 
-.block-main__container .block-diagram__header .title {
+.main-block__upper-axis .block-diagram {
+  margin-right: 20px;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inner {
+  padding: 30px;
+}
+
+.inner .block-diagram__header .title {
   font-size: 14px;
   color: #767676;
   font-weight: bold;
 }
 
-.block-main__container .block-diagram__header .block-diagram__time {
+.inner .block-diagram__header .block-diagram__time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1291,31 +1285,22 @@ template {
 }
 
 .block-diagram__period {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 130px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-size: 12px;
   color: #BFBFBF;
 }
 
-.block-diagram__period .period-month {
+.block-diagram__period .block-diagram__period-month {
   height: 24px;
   width: 68px;
-  color: white;
   padding-top: 5px;
   border-radius: 10px;
+  color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
   background-image: linear-gradient(to right, #EA6D54, #FD5272);
 }
 
-.block-diagram__circle {
+.block-diagram__circle-gray {
   margin: 2px 0 0 0;
 }
 
@@ -1332,32 +1317,20 @@ template {
   color: #BFBFBF;
 }
 
-.block-diagram__main .block-diagram__quantity .four-hundred {
+.block-diagram__main .block-diagram__quantity .block-diagram__number {
   padding-bottom: 30px;
 }
 
-.block-diagram__main .block-diagram__quantity .three-hundred {
-  padding-bottom: 30px;
+.block-diagram__main .block-diagram__quantity .block-diagram__number:last-child {
+  padding-bottom: 0px;
 }
 
-.block-diagram__main .block-diagram__quantity .two-hundred {
-  padding-bottom: 30px;
-}
-
-.block-diagram__main .block-diagram__diagram {
+.block-diagram__main .block-diagram__chart {
   position: relative;
 }
 
-.block-diagram__main .block-diagram__diagram .hr-four {
-  margin: 10px 0 40px;
-}
-
-.block-diagram__main .block-diagram__diagram .hr-three {
-  margin: 0 0 42px;
-}
-
-.block-diagram__main .block-diagram__diagram .hr-two {
-  margin: 0 0 40px;
+.block-diagram__main .block-diagram__chart .block-diagram__line {
+  margin-bottom: 38px;
 }
 
 .block-diagram__main .block-diagram__img {
@@ -1382,6 +1355,14 @@ hr {
   margin: 0;
   border: none;
   background: #EFEEEE;
+}
+
+.block_revenue {
+  width: 264px;
+  height: 266px;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .title-main {

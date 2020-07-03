@@ -3,15 +3,14 @@
 $small-text: 10px;
 $middle-text: 12px;
 $number-big: 20px;
+$font-weight: bold;
 $font-main: 'Lato', sans-serif;
 $font-logo: 'Deftone Stylus', arial;
-$max-width-wrapper: 1366px;
 
 /* Colors
 ===============================================*/
 
 $white: #ffffff;
-$gray_background: #E9E9E9;
 $gray-text: #777777;
 $gray-text-small: #BFBFBF;
 $block_task-sudtitle: #FD566F;
@@ -21,4 +20,12 @@ $linear-gradient-right: linear-gradient(to right, #EA6D54, #FD5272);
 /* Other
 ===============================================*/
 
-$header-margin_col: 0 20px;
+
+
+/* block main 
+===============================================*/
+$title-font-sizes: 14px;
+$title-color: #777777;
+
+
+
