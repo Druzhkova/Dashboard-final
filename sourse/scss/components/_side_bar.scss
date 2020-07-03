@@ -6,7 +6,7 @@
 
   .sidebar_logo {
     padding: 1.25em 0 1.275em;
-    background: $white;
+    background: $background;
   
     a {
       font-family: $font-logo;
@@ -36,7 +36,7 @@
   flex-direction: column;
   margin-bottom: 30px;
   font-size: $small-text;
-  color: $white;
+  color: $text-white;
   align-items: center;
   text-decoration: none;
 

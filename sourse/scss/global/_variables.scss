@@ -10,7 +10,8 @@ $font-logo: 'Deftone Stylus', arial;
 /* Colors
 ===============================================*/
 
-$white: #ffffff;
+$background: #ffffff;
+$text-white: #ffffff;
 $gray-text: #777777;
 $gray-text-small: #BFBFBF;
 $block_task-sudtitle: #FD566F;
@@ -19,6 +20,7 @@ $linear-gradient-right: linear-gradient(to right, #EA6D54, #FD5272);
 
 /* Other
 ===============================================*/
+$box-shadow-block: 0 0 10px rgba(0,0,0,0.5);
 
 
 
@@ -26,6 +28,7 @@ $linear-gradient-right: linear-gradient(to right, #EA6D54, #FD5272);
 ===============================================*/
 $title-font-sizes: 14px;
 $title-color: #777777;
+$title-font-weight: bold;
 
 
 

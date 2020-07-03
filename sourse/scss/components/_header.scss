@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $white;
+  background: $background;
   border: 1px solid #F1F1F1;
 
   .col_more-option {
@@ -20,7 +20,7 @@
       width: 6px;
       margin: 0 1px;
       border-radius: 50%;
-      background: $white;
+      background: $background;
     }   
   }
 

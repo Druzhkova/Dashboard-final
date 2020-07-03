@@ -1,13 +1,11 @@
-@mixin title_tex{
-  font-family: $font-main;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: #777777;
-}
-
 @mixin text($a,$b) {
   font-size: $a;
   color: $b;
+}
+
+@mixin size($a,$b) {
+  width: $a;
+  height: $b;
 }
 
 
