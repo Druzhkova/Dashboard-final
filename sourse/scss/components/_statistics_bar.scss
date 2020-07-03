@@ -15,10 +15,13 @@
 }
 
 .stactics-tab__number {
+  padding-bottom: 5px;
   font-size: $number-big;
   font-weight: $font-weight;
-  color: #FD4F74;
-  padding-bottom: 5px;
+  background: $linear-gradient-right;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .stactics-tab__statistics {
