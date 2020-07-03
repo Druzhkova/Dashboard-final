@@ -329,11 +329,22 @@ content: '';
     }
 
     .cylinders {
+      position: relative;
       margin: 0px 4px;
       @include size(11px,88px);
       border-radius: 10px;
       border: 1px solid #F1F1F1;
       background: #F6F6F6;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -1.5px;
+        @include size(11px,47px);
+        border-radius: 10px;
+        border: 1px solid #F1F1F1;
+        background: $cylinders-gradient;
+      }
     }
 
     .number-progress {

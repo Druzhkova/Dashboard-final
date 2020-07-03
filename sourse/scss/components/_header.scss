@@ -33,11 +33,11 @@
 }
 
 .header__serch-input {
-  width: 300px;
-  height: 30px;
+  padding: 0 13px;
+  @include size(300px,30px);
   font-size: 12px;
-  border: 1px solid #F1F1F1;
-  background: #F8F8F8;
+  border: 1px solid #EFEFEF;
+  background: #EFEFEF;
   border-radius: 20px;
 }
 

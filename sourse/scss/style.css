@@ -855,11 +855,12 @@ template {
 }
 
 .header__serch-input {
+  padding: 0 13px;
   width: 300px;
   height: 30px;
   font-size: 12px;
-  border: 1px solid #F1F1F1;
-  background: #F8F8F8;
+  border: 1px solid #EFEFEF;
+  background: #EFEFEF;
   border-radius: 20px;
 }
 
@@ -1543,12 +1544,26 @@ template {
 }
 
 .main__lower-bottom .block-progress .cylinders {
+  position: relative;
   margin: 0px 4px;
   width: 11px;
   height: 88px;
   border-radius: 10px;
   border: 1px solid #F1F1F1;
   background: #F6F6F6;
+}
+
+.main__lower-bottom .block-progress .cylinders::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -1.5px;
+  width: 11px;
+  height: 47px;
+  border-radius: 10px;
+  border: 1px solid #F1F1F1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7089E6), to(#8743B0));
+  background: linear-gradient(to bottom, #7089E6, #8743B0);
 }
 
 .main__lower-bottom .block-progress .number-progress {
