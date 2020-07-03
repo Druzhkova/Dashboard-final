@@ -705,7 +705,7 @@ template {
   display: none;
 }
 
-.inner .block-diagram__header, .block-diagram__period, .block-task-container {
+.side-bar___container .side-bar___container-text, .inner .block-diagram__header, .block-diagram__period, .block-task-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,26 +974,13 @@ template {
   color: #FD4F74;
 }
 
-.side_bar-right {
-  width: 271px;
-  height: 835px;
-  background: white;
+.side-bar-right {
+  background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.side_bar___container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 25px 20px 20px;
-}
-
-.side_bar___container--ben-affleck {
-  padding: 25px 20px 30px;
-}
-
-.side_bar__panel {
+.side-bar__panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1004,15 +991,15 @@ template {
   background-image: linear-gradient(to right, #EA6D54, #FD5272);
 }
 
-.side_bar__panel .side_bar__users {
+.side-bar__panel .side-bar__users {
   padding: 14px 33px;
 }
 
-.side_bar__panel .side_bar__chat {
+.side-bar__panel .side-bar__chat {
   padding: 15px 36px;
 }
 
-.side_bar__panel .side_bar__like {
+.side-bar__panel .side-bar__like {
   padding: 15px 33px 14px 36px;
 }
 
@@ -1024,7 +1011,7 @@ template {
   background: #C34256;
 }
 
-.side_bar__users:hover::after {
+.side-bar__users:hover::after {
   content: '';
   position: absolute;
   top: 47px;
@@ -1033,7 +1020,7 @@ template {
   border-top: 10px solid #C34256;
 }
 
-.side_bar__chat:hover::after {
+.side-bar__chat:hover::after {
   content: '';
   position: absolute;
   top: 47px;
@@ -1042,7 +1029,7 @@ template {
   border-top: 10px solid #C34256;
 }
 
-.side_bar__like:hover::after {
+.side-bar__like:hover::after {
   content: '';
   position: absolute;
   top: 47px;
@@ -1051,52 +1038,63 @@ template {
   border-top: 10px solid #C34256;
 }
 
-.side_bar___users-photo {
-  height: 42px;
+.side-bar___container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.side-bar___container .side-bar___users-photo {
+  margin-right: 17px;
   width: 42px;
+  height: 42px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 17px;
 }
 
-.side_bar__personal-information {
+.side-bar___container .side-bar___container-text {
+  width: 100%;
+}
+
+.side-bar___container--ben-affleck {
+  padding: 20px 20px 30px;
+}
+
+.side-bar__personal-information {
   text-align: left;
   line-height: 20px;
 }
 
-.personal-information-name {
+.side-bar__personal-information .personal-information-name {
   font-size: 13px;
   color: #777777;
   font-weight: bold;
 }
 
-.personal-information-profession {
+.side-bar__personal-information .personal-information-profession {
   font-size: 10px;
   color: #BFBFBF;
 }
 
-.side_bar___container-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+.side-bar__personal-information .icon-chat-img {
+  width: 20px;
+  height: 16px;
 }
 
-.side_bar___line {
+.side-bar___line {
   width: 233px;
   height: 1px;
   background: #F1F1F1;
+  border: none;
+  margin: 0 20px;
 }
 
-.icon-chat-img {
-  width: 20px;
-  height: 16px;
+.line-search {
+  width: 271px;
+  height: 1px;
+  background: #F1F1F1;
+  border: none;
 }
 
 .aside-search {
@@ -1109,19 +1107,13 @@ template {
   padding: 15px 20px 13px;
 }
 
-.aside-search__input {
+.aside-search .aside-search__input {
   font-size: 10px;
   color: #C0C0C0;
   width: 161px;
   border-style: none;
   border-bottom: 1px solid #E9E9E9;
   background: #FCFCFC;
-}
-
-.line-search {
-  width: 271px;
-  height: 1px;
-  background: #F1F1F1;
 }
 
 .footer_container {
@@ -1668,7 +1660,7 @@ template {
   border-bottom: 6px solid #A889E9;
 }
 
-.block-shipments__number-two::after {
+.block-shipment__number-two::after {
   content: '';
   position: absolute;
   bottom: 0.5px;

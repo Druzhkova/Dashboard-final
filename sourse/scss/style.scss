@@ -29,9 +29,6 @@
   } 
 }
 
-
-
-
 // block-diagram 
 //===========================================
 
@@ -391,6 +388,7 @@ content: '';
     }
   }  
 }
+
 .block-shipments__map {
   padding-bottom: 20px;
 }
@@ -419,7 +417,7 @@ content: '';
   }
 }
 
-.block-shipments__number-two::after {
+.block-shipment__number-two::after {
 content: ''; 
   position: absolute;
   bottom: 0.5px;

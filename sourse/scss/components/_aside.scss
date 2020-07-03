@@ -1,35 +1,26 @@
-.side_bar-right {
-  width: 271px;
-  height: 835px;
-  background: white;
+.side-bar-right {
+  background: $background;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.side_bar___container {
-  display: flex;
-  padding: 25px 20px 20px;
-}
-.side_bar___container--ben-affleck {
-  padding: 25px 20px 30px;
-}
-
-.side_bar__panel {
+.side-bar__panel {
   display: flex;
   align-items: center;
   background-image: $linear-gradient-right;
 
-  .side_bar__users {
+  .side-bar__users {
     padding: 14px 33px;
   }
 
-  .side_bar__chat {
+  .side-bar__chat {
     padding: 15px 36px;
   }
 
-  .side_bar__like {
+  .side-bar__like {
     padding: 15px 33px 14px 36px;
   }
 }
+
 .side-bar-hover {
   position: relative;
 }
@@ -38,87 +29,91 @@
   background: #C34256;
 }
 
-.side_bar__users:hover::after {
+.side-bar__users:hover::after {
   content: ''; 
   position: absolute;
   top: 47px;
   left: 35px;
   border: 10px solid transparent; 
   border-top: 10px solid #C34256; 
- }
-
- .side_bar__chat:hover::after {
-  content: ''; 
-  position: absolute;
-  top: 47px;
-  left: 35px;
-  border: 10px solid transparent; 
-  border-top: 10px solid #C34256; 
- }
-
- .side_bar__like:hover::after {
-  content: ''; 
-  position: absolute;
-  top: 47px;
-  left: 35px;
-  border: 10px solid transparent; 
-  border-top: 10px solid #C34256; 
- }
-
-.side_bar___users-photo {
-  height: 42px;
-  width: 42px;
-  object-fit: cover;
-  margin-right: 17px;
 }
 
-.side_bar__personal-information {
+ .side-bar__chat:hover::after {
+  content: ''; 
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent; 
+  border-top: 10px solid #C34256; 
+}
+
+ .side-bar__like:hover::after {
+  content: ''; 
+  position: absolute;
+  top: 47px;
+  left: 35px;
+  border: 10px solid transparent; 
+  border-top: 10px solid #C34256; 
+}
+
+.side-bar___container {
+  display: flex;
+  padding: 20px;
+  .side-bar___users-photo {
+    margin-right: 17px;
+    @include size(42px,42px);
+    object-fit: cover;
+  }
+
+  .side-bar___container-text {
+    @extend %flex;
+    width: 100%;
+  }
+}
+
+.side-bar___container--ben-affleck {
+  padding: 20px 20px 30px;
+}
+
+.side-bar__personal-information {
   text-align: left;
   line-height: 20px;
+  .personal-information-name {
+    @include text(13px,#777777);
+    font-weight: bold;
+  }
+
+  .personal-information-profession {
+    @include text(10px,#BFBFBF);
+  }
+
+  .icon-chat-img {
+    @include size(20px,16px);
+  }
 }
 
-.personal-information-name {
-  @include text(13px,#777777);
-  font-weight: bold;
-}
-
-.personal-information-profession {
-  @include text(10px,#BFBFBF);
-}
-
-.side_bar___container-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.side_bar___line {
-  width: 233px;
-  height: 1px;
+.side-bar___line {
+  @include size(233px,1px);
   background: #F1F1F1;
+  border: none;
+  margin: 0 20px;
 }
-.icon-chat-img {
-  width: 20px;
-  height: 16px;
+
+.line-search {
+  @include size(271px,1px);
+  background: #F1F1F1;
+  border: none;
 }
 
 .aside-search {
   display: flex;
   justify-content: space-between;
   padding: 15px 20px 13px;
-}
-
-.aside-search__input {
-  @include text(10px,#C0C0C0);
-  width: 161px;
-  border-style: none;
-  border-bottom: 1px solid #E9E9E9;
-  background: #FCFCFC;
-}
-
-.line-search {
-  width: 271px;
-  height: 1px;
-  background: #F1F1F1;
+  .aside-search__input {
+    @include text(10px,#C0C0C0);
+    width: 161px;
+    border-style: none;
+    border-bottom: 1px solid #E9E9E9;
+    background: #FCFCFC;
+  }
 }
