@@ -17,7 +17,7 @@
     background-image: $linear-gradient-right;
     .circle {
       @include size(6px,6px);
-      margin: 0 2px;
+      margin: 0 1.5px;
       border-radius: 50%;
       background: $background;
     }
@@ -35,7 +35,6 @@
 	background: #F8F8F8;
   border-radius: 10px;
 }
-
 
 .personal-information{
   margin: 0 20px;
