@@ -741,19 +741,19 @@ template {
           box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
 }
 
-.sidebar .sidebar_logo {
+.sidebar .sidebar__logo {
   padding: 1.25em 0 1.275em;
   background: #ffffff;
 }
 
-.sidebar .sidebar_logo a {
+.sidebar .sidebar__logo a {
   font-family: "Deftone Stylus", arial;
   font-size: 1.875em;
   color: #FD7858;
   text-decoration: none;
 }
 
-.sidebar .sidebar_nav {
+.sidebar .sidebar__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,15 +765,14 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 70px;
-  height: 58.125em;
 }
 
-.sidebar .sidebar_nav .nav {
+.sidebar .sidebar__nav .nav {
   padding: 1.875em 0 0;
   list-style-type: none;
 }
 
-.nav__item-link {
+.nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,20 +780,20 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 30px;
-  font-size: 10px;
-  color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
+  font-size: 10px;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.nav__item-link .nav_icon {
+.nav__link .nav__icon {
   padding: 10px;
 }
 
-.nav__item-link--button {
+.nav__link--button {
   margin-bottom: 20px;
 }
 
