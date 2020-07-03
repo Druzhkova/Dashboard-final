@@ -138,9 +138,14 @@
   .block-diagram__chart {
     position: relative;
     .block-diagram__line {
-      margin-bottom: 38px;
+      max-width: 582px;
+      height: 1px;
+      margin: 0 0 38px 0;
+      border: none;
+      background: #EFEEEE;
       &:last-child {
         margin-bottom: 0px;
+      } 
     }
   }
 
@@ -157,13 +162,7 @@
   padding-left: 55px;
 }
 
-hr {
-  width: 571px;
-  height: 1px;
-  margin: 0;
-  border: none;
-  background: #EFEEEE;
-}
+
 
 .block_revenue {
   width: 264px;
