@@ -1,4 +1,6 @@
 .side-bar-right {
+  flex: 0 0 270px;
+  width: 270px;
   background: $background;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -7,17 +9,18 @@
   display: flex;
   align-items: center;
   background-image: $linear-gradient-right;
+  font-size: calc(1px + 0.9765vw);
 
   .side-bar__users {
-    padding: 14px 33px;
+    padding: 14px 2.06em;
   }
 
   .side-bar__chat {
-    padding: 15px 36px;
+    padding: 16px 2.25em;
   }
 
   .side-bar__like {
-    padding: 15px 33px 14px 36px;
+    padding: 17px 2.0625em 15px 2.25em;
   }
 }
 
@@ -93,17 +96,17 @@
 }
 
 .side-bar___line {
-  @include size(233px,1px);
+  margin: 0 20px;
+  @include size(15.17vw,1px);
   background: #F1F1F1;
   border: none;
-  margin: 0 20px;
 }
 
 .line-search {
-  @include size(271px,1px);
+  margin: 0;
+  @include size(17.65vw,1px);
   background: #F1F1F1;
   border: none;
-  margin: 0;
 }
 
 .aside-search {

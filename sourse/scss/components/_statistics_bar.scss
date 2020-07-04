@@ -1,4 +1,5 @@
 .stactics-tab {
+  max-width: 95vw;
   text-align: left;
   background: $background;
   border: 1px solid #F1F1F1;
@@ -16,12 +17,8 @@
 
 .stactics-tab__number {
   padding-bottom: 5px;
-  font-size: $number-big;
+  @include text($number-big,#FD576F);
   font-weight: $font-weight;
-  background: $linear-gradient-right;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
 }
 
 .stactics-tab__statistics {
@@ -55,9 +52,8 @@
 }
 
 .add-stactics {
-  font-size: $middle-text;
+  @include text($middle-text,#FD576F);
   font-weight: bold;
-  color: #FD4F74;
 }
  
 

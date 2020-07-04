@@ -794,7 +794,7 @@ template {
 }
 
 .nav__link--button {
-  margin-bottom: 20px;
+  margin: 468px 0 20px;
 }
 
 .nav__item {
@@ -811,6 +811,7 @@ template {
 }
 
 .header {
+  max-width: 95vw;
   background: #ffffff;
   border: 1px solid #F1F1F1;
 }
@@ -832,7 +833,7 @@ template {
           justify-content: center;
   width: 33px;
   height: 18px;
-  margin: 25px 20px;
+  margin: 1.56em 1.25em;
   border-radius: 10px;
   background-image: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
   background-image: linear-gradient(to right, #EA6D54, #FD5272);
@@ -880,7 +881,7 @@ template {
 
 .personal-information .personal-information__name {
   font-size: 13px;
-  color: #FD4E75;
+  color: #FD576F;
   font-weight: bold;
 }
 
@@ -894,6 +895,7 @@ template {
 }
 
 .stactics-tab {
+  max-width: 95vw;
   text-align: left;
   background: #ffffff;
   border: 1px solid #F1F1F1;
@@ -913,11 +915,8 @@ template {
 .stactics-tab__number {
   padding-bottom: 5px;
   font-size: 20px;
+  color: #FD576F;
   font-weight: bold;
-  background: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
-  background: linear-gradient(to right, #EA6D54, #FD5272);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .stactics-tab__statistics {
@@ -957,11 +956,15 @@ template {
 
 .add-stactics {
   font-size: 12px;
+  color: #FD576F;
   font-weight: bold;
-  color: #FD4F74;
 }
 
 .side-bar-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 270px;
+          flex: 0 0 270px;
+  width: 270px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -976,18 +979,19 @@ template {
           align-items: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#EA6D54), to(#FD5272));
   background-image: linear-gradient(to right, #EA6D54, #FD5272);
+  font-size: calc(1px + 0.9765vw);
 }
 
 .side-bar__panel .side-bar__users {
-  padding: 14px 33px;
+  padding: 14px 2.06em;
 }
 
 .side-bar__panel .side-bar__chat {
-  padding: 15px 36px;
+  padding: 16px 2.25em;
 }
 
 .side-bar__panel .side-bar__like {
-  padding: 15px 33px 14px 36px;
+  padding: 17px 2.0625em 15px 2.25em;
 }
 
 .side-bar-hover {
@@ -1070,19 +1074,19 @@ template {
 }
 
 .side-bar___line {
-  width: 233px;
+  margin: 0 20px;
+  width: 15.17vw;
   height: 1px;
   background: #F1F1F1;
   border: none;
-  margin: 0 20px;
 }
 
 .line-search {
-  width: 271px;
+  margin: 0;
+  width: 17.65vw;
   height: 1px;
   background: #F1F1F1;
   border: none;
-  margin: 0;
 }
 
 .aside-search {
@@ -1105,6 +1109,10 @@ template {
 }
 
 .footer__container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 270px;
+          flex: 0 0 270px;
+  width: 270px;
   padding: 30px 40px 15px;
 }
 
@@ -1132,10 +1140,18 @@ template {
   margin-bottom: 15px;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 1366px;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
@@ -1143,12 +1159,29 @@ template {
   text-transform: capitalize;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #EBEBEB;
+}
+
+.wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container-main .main-block {
@@ -1159,10 +1192,10 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 10px;
   background: #EBEBEB;
 }
 
@@ -1170,11 +1203,20 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-block__upper-axis .block-diagram {
-  margin-right: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 10px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1246,7 +1288,7 @@ template {
 }
 
 .block-diagram__main .block-diagram__chart .block-diagram__line {
-  width: 582px;
+  width: 37.9vw;
   height: 1px;
   margin: 0 0 38px 0;
   border: none;
@@ -1262,6 +1304,10 @@ template {
   top: 60px;
 }
 
+.block-diagram__main .block-diagram__img .block-diagram__img-line {
+  width: 37.9vw;
+}
+
 .block-diagram__month {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1274,6 +1320,10 @@ template {
 }
 
 .block-revenue {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  margin: 10px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1282,12 +1332,12 @@ template {
 .block-revenue__title {
   font-size: 14px;
   color: #777777;
-  padding: 0 43px 30px;
+  margin: 0 auto 30px;
   font-weight: bold;
 }
 
 .block-revenue__ellipse {
-  margin: 0 40px 30px;
+  margin: 0 auto 30px;
   width: 124px;
   height: 124px;
   border: 10px solid #7E66BF;
@@ -1316,23 +1366,28 @@ template {
 }
 
 .stactics-trigon .stactics-trigon__number-one {
-  padding-right: 15px;
+  position: relative;
+  margin-right: 15px;
 }
 
 .stactics-trigon .stactics-trigon__number-one::after {
   content: '';
   position: absolute;
   bottom: 1px;
-  left: 65px;
+  right: 20px;
   border: 3px solid transparent;
   border-bottom: 6px solid #A889E9;
+}
+
+.stactics-trigon__number-two {
+  position: relative;
 }
 
 .stactics-trigon__number-two::after {
   content: '';
   position: absolute;
   bottom: 0px;
-  left: 102px;
+  right: 21px;
   border: 3px solid transparent;
   border-top: 6px solid #FD5670;
 }
@@ -1341,13 +1396,23 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-block__lower-axis .block-feedback {
-  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+  width: 350px;
+  margin: 10px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1445,24 +1510,25 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__lower-right .block-task {
-  margin-bottom: 20px;
+  width: 32.6172vw;
+  margin: 10px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .block-task__title {
-  padding-bottom: 20px;
+  padding-bottom: 18.4px;
   font-size: 14px;
   color: #777777;
   text-align: left;
@@ -1568,6 +1634,8 @@ template {
 }
 
 .main__lower-bottom .block-progress {
+  width: 15.6902vw;
+  margin: 10px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1624,28 +1692,35 @@ template {
 }
 
 .stactics-trigon--progress .block-progress-number-one {
+  position: relative;
   padding-right: 15px;
 }
 
 .stactics-trigon--progress .block-progress-number-one::after {
   content: '';
   position: absolute;
-  bottom: 2px;
-  left: 55px;
+  bottom: 1px;
+  right: 35px;
   border: 3px solid transparent;
   border-bottom: 6px solid #A889E9;
+}
+
+.block-progress-number-two {
+  position: relative;
 }
 
 .block-progress-number-two::after {
   content: '';
   position: absolute;
   bottom: 1px;
-  left: 90px;
+  right: 21px;
   border: 3px solid transparent;
   border-top: 6px solid #FD5670;
 }
 
 .block-shipments {
+  width: 15.6902vw;
+  margin: 10px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1674,7 +1749,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 20px;
-  color: #FD5B6C;
+  color: #FD576F;
   font-weight: bold;
 }
 

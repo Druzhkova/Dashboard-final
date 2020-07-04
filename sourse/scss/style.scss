@@ -8,23 +8,35 @@
 @import './components/aside';
 @import './components/footer';
 
+*{
+  box-sizing: border-box;
+}
+
 .wrapper {
   display: flex;
+  justify-content: center;
   max-width: 1366px;
   margin: 0 auto;
   font-family: $font-main;
   text-align: center;
   text-transform: capitalize;
   box-shadow: $box-shadow-block;
+  background: #EBEBEB;
+  .container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
 }
 
 .container-main {
   display: flex;
+  justify-content: space-between;
   .main-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
+    flex: 1 1 auto;
+    margin: 10px;
     background: #EBEBEB;
   } 
 }
@@ -34,9 +46,12 @@
 
 .main-block__upper-axis {
   display: flex;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
   .block-diagram {
-    margin-right: 20px;
+    flex-grow: 1;
+    margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
   }
@@ -94,7 +109,7 @@
   .block-diagram__chart {
     position: relative;
     .block-diagram__line {
-      @include size(582px,1px);
+      @include size(37.9vw,1px);
       margin: 0 0 38px 0;
       border: none;
       background: #EFEEEE;
@@ -108,6 +123,9 @@
   .block-diagram__img {
     position: absolute;
     top: 60px;
+    .block-diagram__img-line {
+      width: 37.9vw;
+    }
   }
 }
 
@@ -122,18 +140,20 @@
 //===========================================
 
 .block-revenue {
+  flex-grow: 3;
+  margin: 10px;
   background: $background;
   box-shadow: $box-shadow-block;
 }
 
 .block-revenue__title {
   @include text($title-font-sizes,$title-color);
-  padding: 0 43px 30px;
+  margin: 0 auto 30px;
   font-weight: $title-font-weight;
 }
 
 .block-revenue__ellipse {
-  margin: 0 40px 30px;
+  margin: 0 auto 30px;
   @include size(124px,124px);
   border: 10px solid #7E66BF;
   border-radius: 50%;
@@ -155,23 +175,28 @@
   font-size: $middle-text;
   color: $gray-text-small;
   .stactics-trigon__number-one {
-    padding-right: 15px;
+    position: relative;
+    margin-right: 15px;
     &::after {
       content: ''; 
       position: absolute;
       bottom: 1px;
-      left: 65px;
+      right: 20px;
       border: 3px solid transparent; 
       border-bottom: 6px solid #A889E9; 
     }
   }
 }
 
+.stactics-trigon__number-two {
+  position: relative;
+}
+
 .stactics-trigon__number-two::after {
 content: ''; 
   position: absolute;
   bottom: 0px;
-  left: 102px;
+  right: 21px;
   border: 3px solid transparent; 
   border-top: 6px solid #FD5670; 
 }
@@ -180,9 +205,13 @@ content: '';
 // ========================================================== //
 .main-block__lower-axis {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
   .block-feedback {
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1.5;
+    width: 350px;
+    margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
     .inner--feedback {
@@ -252,17 +281,19 @@ content: '';
 
 .main__lower-right {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
   .block-task {
-    margin-bottom: 20px;
+    width: 32.6172vw;
+    margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
   }
 }
 
 .block-task__title {
-  padding-bottom: 20px;
+  padding-bottom: 18.4px;
   @include text($title-font-sizes,$title-color);
   text-align: left;
   font-weight: $title-font-weight;
@@ -354,6 +385,8 @@ content: '';
   display: flex;
   justify-content: space-between;
   .block-progress {
+    width: 15.6902vw;
+    margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
     .block-progress__title {
@@ -397,23 +430,28 @@ content: '';
 .stactics-trigon--progress {
   padding-top: 10px;
   .block-progress-number-one {
+    position: relative;
     padding-right: 15px;
     &::after {
       content: ''; 
       position: absolute;
-      bottom: 2px;
-      left: 55px;
+      bottom: 1px;
+      right: 35px;
       border: 3px solid transparent; 
       border-bottom: 6px solid #A889E9; 
     }
   }
 }
 
+.block-progress-number-two {
+  position: relative;
+}
+
 .block-progress-number-two::after {
 content: ''; 
   position: absolute;
   bottom: 1px;
-  left: 90px;
+  right: 21px;
   border: 3px solid transparent; 
   border-top: 6px solid #FD5670;
 }
@@ -422,6 +460,8 @@ content: '';
 // ========================================================== //
 
 .block-shipments {
+  width: 15.6902vw;
+  margin: 10px;
   background: $background;
   box-shadow: $box-shadow-block;
   .inner--shipments {
@@ -441,12 +481,11 @@ content: '';
 .block-shipments__number {
   display: flex;
   justify-content: space-between;
-  @include text($number-big,#FD5B6C);
+  @include text($number-big,#FD576F);
   font-weight: bold;
   .stactics-trigon--shipments {
     font-weight: normal;
     padding-top: 10px;
-
   }
 }
 
