@@ -207,10 +207,7 @@ content: '';
   display: flex;
   flex-wrap: wrap;
   .block-feedback {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1.5;
-    width: 350px;
+    width: 467px;
     margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
@@ -281,11 +278,9 @@ content: '';
 
 .main__lower-right {
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
+  width: 500px;
   .block-task {
-    width: 32.6172vw;
     margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
@@ -370,8 +365,6 @@ content: '';
     border-radius: 25%;
     transform: rotate(-45deg);
   }
-
-  
 }
 
 // Section progress
