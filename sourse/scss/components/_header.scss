@@ -1,6 +1,6 @@
 .header {
-  max-width: 95vw;
   @extend %flex;
+  flex-grow: 1;
   background: $background;
   border: 1px solid #F1F1F1;
 }

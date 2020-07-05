@@ -1,12 +1,17 @@
 .stactics-tab {
-  max-width: 95vw;
+  flex-grow: 1;
   text-align: left;
   background: $background;
   border: 1px solid #F1F1F1;
   .stactics-tab__inner {
+    max-width: 95vw;
     @extend %flex;
     padding: 20px 50px 20px 60px;
   }
+}
+
+.stactics-tab__block {
+  margin-right: 25px;
 }
 
 .stactics-tab__title {

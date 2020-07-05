@@ -1,0 +1,32 @@
+@media (max-width: 1030px) {
+  .sidebar {
+    display: none;
+  }
+  .stactics-tab__inner {
+    overflow: scroll;
+  }
+
+
+}
+@media (min-width: 880px) {
+  .navigation {
+    display: none;
+  }
+  .gamburger {
+    display: none;
+  }
+
+  .navigation__logo {
+    display: none;
+  } 
+}
+
+@media (max-width: 1030px) {
+  .sidebar {
+    display: none;
+  }
+  .stactics-tab__inner {
+    overflow: scroll;
+  }
+
+
