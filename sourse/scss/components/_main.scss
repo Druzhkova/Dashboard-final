@@ -1,0 +1,457 @@
+// block-diagram 
+//===========================================
+
+.main-block__upper-axis {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  .block-diagram {
+    flex: 2 1 230px;
+    margin: 10px;
+    background: $background;
+    box-shadow: $box-shadow-block;
+  }
+}
+
+.inner {
+  padding: 30px;
+  .block-diagram__header {
+    @extend %flex;
+    .block-diagram__title {
+      @include text($title-font-sizes,#767676);
+      font-weight: $font-weight;
+    }
+
+    .block-diagram__time {
+      display: flex;
+      justify-content: space-between;
+      width: 170px;
+    }
+  }
+}
+
+.block-diagram__period {
+  @extend %flex;
+  width: 130px;
+  @include text($middle-text,#BFBFBF);
+  .block-diagram__period-month {
+    @include size(68px,24px);
+    padding-top: 5px;
+    border-radius: 10px;
+    color: $text-white;
+    background-image: $linear-gradient-right;
+  }
+}
+
+.block-diagram__circle-gray {
+  @extend %circle-gray;
+  margin: 2px 0 0 0;
+}
+
+.block-diagram__main {
+  display: flex;
+  padding: 28px 0 23px;
+  .block-diagram__quantity {
+    margin: -10px 33px 0 0;
+    @include text($middle-text,$gray-text-small);
+    .block-diagram__number {
+      padding-bottom: 27px;
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+  .block-diagram__chart {
+    position: relative;
+    width: 100%;
+    .block-diagram__line {
+      @include size(100%,1px);
+      margin: 0 0 38px 0;
+      border: none;
+      background: #EFEEEE;
+    }
+
+    .block-diagram__line--last {
+      margin: 0;
+    } 
+  }
+
+  .block-diagram__img {
+    position: absolute;
+    top: 60px;
+    .block-diagram__img-line {
+      width: 100%;
+    }
+  }
+}
+
+.block-diagram__month {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 55px;
+  @include text($middle-text,$gray-text-small);
+}
+
+// block-revenue
+//===========================================
+
+.block-revenue {
+  flex: 0 0 264px;
+  margin: 10px;
+  background: $background;
+  box-shadow: $box-shadow-block;
+}
+
+.block-revenue__title {
+  @include text($title-font-sizes,$title-color);
+  margin: 0 auto 30px;
+  font-weight: $title-font-weight;
+}
+
+.block-revenue__ellipse {
+  margin: 0 auto 30px;
+  @include size(124px,124px);
+  border: 10px solid #7E66BF;
+  border-radius: 50%;
+  .block-revenue__ellipse-price {
+    padding: 33px 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #6359B0;
+    border: 7px solid #EDEDED;
+    border-radius: 50%;
+  }
+}
+
+
+.stactics-trigon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: $middle-text;
+  color: $gray-text-small;
+  .stactics-trigon__number-one {
+    position: relative;
+    margin-right: 15px;
+    &::after {
+      content: ''; 
+      position: absolute;
+      bottom: 1px;
+      right: 20px;
+      border: 3px solid transparent; 
+      border-bottom: 6px solid #A889E9; 
+    }
+  }
+}
+
+.stactics-trigon__number-two {
+  position: relative;
+}
+
+.stactics-trigon__number-two::after {
+content: ''; 
+  position: absolute;
+  bottom: 0px;
+  right: 21px;
+  border: 3px solid transparent; 
+  border-top: 6px solid #FD5670; 
+}
+
+// Section feedback
+// ========================================================== //
+.main-block__lower-axis {
+  display: flex;
+  .block-feedback {
+    margin: 10px;
+    background: $background;
+    box-shadow: $box-shadow-block;
+    .inner--feedback {
+      padding: 30px 30px 35px;
+    }
+  }
+}
+
+.block-feedback__title {
+  padding-bottom: 40px;
+  @include text($title-font-sizes,$title-color);
+  text-align: left;
+  font-weight: $title-font-weight;
+}
+.customers-feed {
+  display: flex;
+  @include text(8px,#979796);
+}
+
+.customers-feed__photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .customers-feed__img {
+    @include size(43px,43px);
+    margin-bottom: 13px;
+    object-fit: cover;
+  }
+}
+
+.customers-feed__desc{
+  margin-left: 20px;
+}
+
+.feed__container {
+  padding: 18px 20px;
+  @include text(12px,#BFBFBF);
+  text-transform: none;
+  text-align: justify;
+  line-height: 1.2;
+  background: #FCFCFC;
+  border: 1px solid #F1F1F1;
+  .feed__text-bold {
+    font-weight: bold;
+    color: $title-color;
+  }  
+}
+
+.sub-feed {
+  display: flex;
+  margin: 20px 0;
+  .sub-feed__line{
+    @include size(4px,187px);
+    margin-right: 13px;
+    background: #F1F1F1;
+  }
+}
+
+.subfeet__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Section task
+// ========================================================== //
+
+.main__lower-right {
+  display: flex;
+  flex-wrap: wrap;
+  .block-task {
+    margin: 10px;
+    background: $background;
+    box-shadow: $box-shadow-block;
+  }
+}
+
+.block-task__title {
+  padding-bottom: 18.4px;
+  @include text($title-font-sizes,$title-color);
+  text-align: left;
+  font-weight: $title-font-weight;
+}
+
+.block-task__line {
+  margin: 0;
+  @include size(441px,1px);
+  border: none;
+  background: #EFEEEE;
+}
+
+.block-task-container {
+  @extend %flex;
+  .block-task__tick-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.block-task__tick {
+  margin: 10px 10px 10px 5px;
+  @include size(17px,17px);
+  border-radius: 50%;
+  border: 2px solid #E2E2E2;
+}
+
+.block-task__tick_pink {
+  background: $block_task-sudtitle;
+  border: none;
+}
+
+.block-task__tick-text {
+  @include text($middle-text,$block_task-sudtitle);
+  font-weight: $font-weight;
+}
+
+.block-task__text {
+  @include text($middle-text,$gray-text-small);
+  padding-left: 9px; 
+}
+
+.block-task__time {
+  display: flex;
+  align-items: center;
+}
+
+.block-task__icon-time {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #A5A5A5;
+  border-radius: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1.2px;
+    right: 3px;
+    width: 1.2px;
+    height: 5px;
+    background: #A5A5A5;
+    border-radius: 10%;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 1.2px;
+    height: 4px;
+    background: #A5A5A5;
+    border-radius: 25%;
+    transform: rotate(-45deg);
+  }
+}
+
+// Section progress
+// ========================================================== //
+
+.inner--lower-bottom {
+  padding: 30px 30px 23px;
+}
+
+.main__lower-bottom {
+  display: flex;
+  justify-content: space-between;
+  .block-progress {
+    margin: 10px;
+    background: $background;
+    box-shadow: $box-shadow-block;
+    .block-progress__title {
+      padding:0 64px 30px;
+      @include text($title-font-sizes,$title-color);
+      font-weight: $title-font-weight;
+    }
+
+    .cylinders {
+      position: relative;
+      margin: 0px 4px;
+      @include size(11px,88px);
+      border-radius: 10px;
+      border: 1px solid #F1F1F1;
+      background: #F6F6F6;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -1.5px;
+        @include size(11px,47px);
+        border-radius: 10px;
+        border: 1px solid #F1F1F1;
+        background: $cylinders-gradient;
+      }
+    }
+
+    .number-progress {
+      @include text(20px,#747DDC);
+      font-weight: bold;
+    }
+  }
+}
+
+.content_cylinders{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 23px;
+}
+
+.stactics-trigon--progress {
+  padding-top: 10px;
+  .block-progress-number-one {
+    position: relative;
+    padding-right: 15px;
+    &::after {
+      content: ''; 
+      position: absolute;
+      bottom: 1px;
+      right: 35px;
+      border: 3px solid transparent; 
+      border-bottom: 6px solid #A889E9; 
+    }
+  }
+}
+
+.block-progress-number-two {
+  position: relative;
+}
+
+.block-progress-number-two::after {
+content: ''; 
+  position: absolute;
+  bottom: 1px;
+  right: 21px;
+  border: 3px solid transparent; 
+  border-top: 6px solid #FD5670;
+}
+
+// Section shipments
+// ========================================================== //
+
+.block-shipments {
+  margin: 10px;
+  background: $background;
+  box-shadow: $box-shadow-block;
+  .inner--shipments {
+    padding: 30px 25px;
+    .block-shipments__title {
+      padding-bottom: 25px;
+      @include text($title-font-sizes,$title-color);
+      font-weight: $title-font-weight;
+    }
+  }  
+}
+
+.block-shipments__map {
+  padding-bottom: 20px;
+}
+
+.block-shipments__number {
+  display: flex;
+  justify-content: space-between;
+  @include text($number-big,#FD576F);
+  font-weight: bold;
+  .stactics-trigon--shipments {
+    font-weight: normal;
+    padding-top: 10px;
+  }
+}
+
+.block-shipments__number-one {
+  padding-right: 15px;
+  &::after {
+    content: ''; 
+    position: absolute;
+    bottom: 1.5px;
+    right: 58px;
+    border: 3px solid transparent; 
+    border-bottom: 6px solid #A889E9; 
+  }
+}
+
+.block-shipment__number-two::after {
+content: ''; 
+  position: absolute;
+  bottom: 0.5px;
+  right: 22px;
+  border: 3px solid transparent; 
+  border-top: 6px solid #FD5670;
+}
