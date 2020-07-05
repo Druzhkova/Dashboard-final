@@ -25,8 +25,8 @@
   background: #EBEBEB;
   .container {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -36,7 +36,7 @@
   .main-block {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex-grow: 2;
     margin: 10px;
     background: #EBEBEB;
   } 

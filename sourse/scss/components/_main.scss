@@ -3,11 +3,9 @@
 
 .main-block__upper-axis {
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
   .block-diagram {
-    flex: 2 1 230px;
+    flex: 3 0 275px;
     margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
@@ -19,6 +17,7 @@
   .block-diagram__header {
     @extend %flex;
     .block-diagram__title {
+      width: 200px;
       @include text($title-font-sizes,#767676);
       font-weight: $font-weight;
     }
@@ -98,7 +97,7 @@
 //===========================================
 
 .block-revenue {
-  flex: 0 0 264px;
+  flex: 1 0.5 164px;
   margin: 10px;
   background: $background;
   box-shadow: $box-shadow-block;
@@ -163,7 +162,9 @@ content: '';
 // ========================================================== //
 .main-block__lower-axis {
   display: flex;
+  flex-wrap: wrap;
   .block-feedback {
+    flex: 1 0 367px;
     margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
@@ -235,7 +236,9 @@ content: '';
 .main__lower-right {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 0 150px;
   .block-task {
+    flex-grow: 1;
     margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
@@ -330,9 +333,11 @@ content: '';
 }
 
 .main__lower-bottom {
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   .block-progress {
+    flex-grow: 1;
     margin: 10px;
     background: $background;
     box-shadow: $box-shadow-block;
@@ -407,6 +412,7 @@ content: '';
 // ========================================================== //
 
 .block-shipments {
+  flex-grow: 1;
   margin: 10px;
   background: $background;
   box-shadow: $box-shadow-block;
