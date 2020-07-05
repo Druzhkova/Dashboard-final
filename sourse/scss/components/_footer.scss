@@ -1,6 +1,5 @@
 .footer__container {
-  flex: 0 0 270px;
-  width: 270px;
+  flex-grow: 1;
   padding: 30px 40px 15px;
   .footer__title {
     padding-bottom: 30px;
@@ -11,6 +10,7 @@
 
 .socials {
   display: flex;
+  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: space-between;
   .socials__icon {

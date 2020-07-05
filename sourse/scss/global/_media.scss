@@ -2,31 +2,26 @@
   .sidebar {
     display: none;
   }
-  .stactics-tab__inner {
-    overflow: scroll;
-  }
-
-
 }
-@media (min-width: 880px) {
+
+@media (min-width: 1030px) {
   .navigation {
-    display: none;
-  }
-  .gamburger {
     display: none;
   }
 
   .navigation__logo {
     display: none;
-  } 
-}
+  }
 
-@media (max-width: 1030px) {
-  .sidebar {
+  .gamburger {
     display: none;
   }
-  .stactics-tab__inner {
-    overflow: scroll;
-  }
 
+}
+
+@media (max-width: 936px) {
+  .container-main {
+    flex-wrap: wrap;
+  }
+}
 
