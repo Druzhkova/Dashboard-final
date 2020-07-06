@@ -4,6 +4,7 @@
   background-image: $linear-gradient-bottom;
   box-shadow: 0 0 0.625em rgba(0,0,0,0.5);
   .sidebar__logo {
+    width: 70px;
     padding: 1.25em 0 1.275em;
     background: $background;
     a {
@@ -15,14 +16,7 @@
   }
 
   .sidebar__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 70px;
-    .nav {
-      padding: 1.875em 0 0;
-      list-style-type: none;
-    }
+    padding: 1.875em 0 0;
   }
 }
 
@@ -39,11 +33,11 @@
   }
 }
 
-.nav__link--button {
- margin: 468px 0 20px;
+.nav__link-button {
+ margin-bottom: 0 auto;
 }
 
-.nav__item {
+.nav__link {
   position: relative;
   &:hover::after {
     content: ''; 
@@ -57,11 +51,10 @@
 
 .navigation {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background-image: $linear-gradient-bottom;
-
 }
 
 .navigation__logo {
