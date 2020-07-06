@@ -1,4 +1,6 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
   z-index: 1;
   width: 70px;
   background-image: $linear-gradient-bottom;
@@ -16,8 +18,14 @@
   }
 
   .sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
     padding: 1.875em 0 0;
   }
+}
+.nav__link-button {
+  margin-bottom: 20px;
 }
 
 .nav__link {
@@ -31,10 +39,6 @@
   .nav__icon {
     padding: 10px;
   }
-}
-
-.nav__link-button {
- margin-bottom: 0 auto;
 }
 
 .nav__link {
